@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+
+// Variables
+@import "./utils/variables";
+
+// COMPONENTS & PAGES
+@import "./components/Navbar/Navbar";
+@import "./pages/Home/Home";
+@import "./pages/Destination/Destination";
+@import "./pages/Crew/Crew";
+@import "./pages/Technology/Technology";
+
+// RESET STYLES
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+}

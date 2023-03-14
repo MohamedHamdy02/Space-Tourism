@@ -1,0 +1,256 @@
+.crew-container {
+  background-image: url(../../assets/crew/background-crew-desktop.jpg);
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  color: $primaryColor;
+
+  .crew-row {
+    padding: 14rem 47px 0 30px;
+
+    .crew-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .crew-left-container {
+        width: 43%;
+        margin-top: -3rem;
+
+        .crew-title-container {
+          position: absolute;
+          top: 15px;
+
+          h5 {
+            font-size: $FontSizeHeading5;
+            font-family: $fontFamily2;
+            font-weight: $PriamryFontWeight;
+            line-height: $LineHeightHeading5;
+            letter-spacing: $LetterSpacingHeading5;
+            text-transform: $FontUpperCase;
+
+            span {
+              font-weight: $SecondaryFontWeight;
+              color: $primaryColor;
+              opacity: $LightOpacity;
+              margin-right: 0.7rem;
+            }
+          }
+        }
+
+        h4 {
+          font-family: $fontFamily1;
+          font-weight: $PriamryFontWeight;
+          font-size: $FontSizeHeading4;
+          line-height: $LineHeightHeading4;
+          text-transform: $FontUpperCase;
+          color: $primaryColor;
+          opacity: $LightOpacity;
+          margin-bottom: 15px;
+        }
+
+        h3 {
+          font-family: $fontFamily1;
+          font-weight: $PriamryFontWeight;
+          font-size: $FontSizeHeading3;
+          line-height: $LineHeightHeading3;
+          text-transform: $FontUpperCase;
+          margin-bottom: 25px;
+        }
+
+        p {
+          width: 68%;
+          font-family: $fontFamily3;
+          font-weight: $PriamryFontWeight;
+          font-size: $FontSizeMediumParagraph;
+          line-height: $LineHeightParagraph;
+          color: $secondaryColor;
+        }
+
+        .carousel-container {
+          position: absolute;
+          bottom: 120px;
+
+          .carousel-row {
+            display: flex;
+            gap: 25px;
+
+            .carousel-item {
+              position: relative;
+              width: 15px;
+              height: 15px;
+              border-radius: 50%;
+              background-color: $primaryColor;
+              color: transparent;
+              cursor: pointer;
+              opacity: $LightOpacity;
+            }
+            .active {
+              background-color: $primaryColor;
+              opacity: $Opacity;
+            }
+          }
+        }
+      }
+      .crew-right-container {
+        width: 36%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .crew-container {
+    background-image: url(../../assets/crew/background-crew-mobile.jpg);
+    height: auto;
+
+    .crew-row {
+      padding: 9rem 34px 0 34px;
+
+      .crew-wrapper {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+
+        .crew-left-container {
+          width: 100%;
+          margin-top: 5rem;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+
+          .crew-title-container {
+            top: -50px;
+
+            h5 {
+              font-size: $FontSizeSmallHeading5;
+              line-height: $LineHeightSmallHeading5;
+              letter-spacing: $LetterSpacingSmallHeading5;
+            }
+          }
+
+          h4 {
+            font-size: $FontSizeSmallHeading5;
+            line-height: $LineHeightSmallHeading5;
+            margin-bottom: 15px;
+          }
+
+          h3 {
+            font-size: $FontSizeSmallHeading3;
+            line-height: $LineHeightSmallHeading3;
+            margin-bottom: 15px;
+          }
+
+          p {
+            width: 100%;
+            font-size: $FontSizeSmallParagraph;
+            line-height: $LineHeightSmallParagraph;
+            margin-bottom: 5rem;
+          }
+
+          .carousel-container {
+            top: 263px;
+            text-align: center;
+
+            .carousel-row {
+              justify-content: center;
+              gap: 16px;
+
+              .carousel-item {
+                width: 12px;
+                height: 12px;
+              }
+            }
+          }
+        }
+        .crew-right-container {
+          text-align: center;
+          width: 100%;
+          border-bottom: 3px solid #383b4b;
+
+          img {
+            height: 222px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .crew-container {
+    background-image: url(../../assets/crew/background-crew-tablet.jpg);
+    height: auto;
+
+    .crew-row {
+      padding: 11.8rem 34px 0 34px;
+
+      .crew-wrapper {
+        flex-wrap: wrap;
+
+        .crew-left-container {
+          width: 100%;
+          margin-top: 2rem;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+
+          .crew-title-container {
+            top: -50px;
+            left: 10px;
+
+            h5 {
+              font-size: $FontSizeParagraph;
+              line-height: $LineHeightSmallHeading4;
+              letter-spacing: $LetterSpacingHeading;
+            }
+          }
+
+          h4 {
+            font-size: $FontSizeSmallHeading3;
+            line-height: $LineHeightSmallHeading3;
+            margin-bottom: 15px;
+          }
+
+          h3 {
+            font-size: $FontSizeSmallHeading2;
+            line-height: $LineHeightHeading2;
+            margin-bottom: 15px;
+          }
+
+          p {
+            width: 458px;
+            font-size: $FontSizeSmallHeading5;
+            line-height: $LineHeightMediumParagraph;
+          }
+
+          .carousel-container {
+            top: 260px;
+            text-align: center;
+
+            .carousel-row {
+              justify-content: center;
+              gap: 16px;
+
+              .carousel-item {
+                width: 12px;
+                height: 12px;
+              }
+            }
+          }
+        }
+        .crew-right-container {
+          text-align: center;
+          width: 100%;
+          margin-top: 6rem;
+
+          img {
+            height: 520px;
+          }
+        }
+      }
+    }
+  }
+}

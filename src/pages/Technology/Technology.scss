@@ -1,0 +1,323 @@
+.technology-container {
+  background-image: url(../../assets/technology/background-technology-desktop.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  height: auto;
+  width: 100%;
+
+  .technology-row {
+    padding: 16rem 0px 0 170px;
+
+    .technology-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .technology-left-container {
+        width: 49%;
+
+        .technology-title {
+          position: absolute;
+          top: -50px;
+
+          h5 {
+            font-size: $FontSizeHeading5;
+            font-family: $fontFamily2;
+            font-weight: $PriamryFontWeight;
+            line-height: $LineHeightHeading5;
+            letter-spacing: $LetterSpacingHeading5;
+            text-transform: $FontUpperCase;
+            color: $primaryColor;
+
+            span {
+              font-weight: $SecondaryFontWeight;
+              color: $primaryColor;
+              opacity: $LightOpacity;
+              margin-right: 0.7rem;
+            }
+          }
+        }
+        .technology-content-container {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 2rem;
+
+          .buttons-container {
+            display: flex;
+            flex-direction: column;
+            gap: 31px;
+
+            .button {
+              width: 80px;
+              height: 80px;
+              border-radius: 50%;
+              color: $primaryColor;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              cursor: pointer;
+              border: 1px solid rgba(247, 247, 247, 0.5);
+              font-size: $FontSizeHeading4;
+              line-height: $LineHeightHeading4;
+              letter-spacing: $LetterSpacingHeading4;
+              font-family: $fontFamily1;
+              font-weight: $PriamryFontWeight;
+
+              &:hover {
+                border: 1px solid $primaryColor;
+              }
+            }
+
+            .active {
+              background-color: $primaryColor;
+              color: $darkColor;
+            }
+          }
+
+          .technology-desc-container {
+            h6 {
+              font-size: $FontSizeSmallHeading5;
+              font-family: $fontFamily2;
+              font-weight: $PriamryFontWeight;
+              line-height: $LineHeightSmallHeading5;
+              letter-spacing: $LetterSpacingSmallHeading5;
+              color: $secondaryColor;
+              margin-bottom: 15px;
+            }
+
+            h3 {
+              font-family: $fontFamily1;
+              font-weight: $PriamryFontWeight;
+              font-size: $FontSizeHeading3;
+              line-height: $LineHeightHeading3;
+              text-transform: $FontUpperCase;
+              color: $primaryColor;
+              margin-bottom: 10px;
+            }
+
+            p {
+              font-family: $fontFamily3;
+              font-weight: $PriamryFontWeight;
+              font-size: $FontSizeMediumParagraph;
+              line-height: $LineHeightParagraph;
+              color: $secondaryColor;
+              width: 444px;
+            }
+          }
+        }
+      }
+      .technology-right-container {
+        .device-screen {
+          display: block;
+        }
+
+        .mobile-tablet-screen {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .technology-container {
+    background-image: url(../../assets/technology/background-technology-mobile.jpg);
+
+    .technology-row {
+      padding: 9rem 0 0 0;
+
+      .technology-wrapper {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        text-align: center;
+
+        .technology-left-container {
+          width: 100%;
+
+          .technology-title {
+            width: 100%;
+            position: absolute;
+            top: -50px;
+
+            h5 {
+              font-size: $FontSizeSmallHeading5;
+              line-height: $LineHeightSmallHeading5;
+              letter-spacing: $LetterSpacingSmallHeading5;
+            }
+          }
+          .technology-content-container {
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+
+            .buttons-container {
+              flex-direction: row;
+              justify-content: center;
+              gap: 20px;
+              width: 100%;
+              margin-bottom: 2rem;
+
+              .button {
+                width: 40px;
+                height: 40px;
+                font-size: $FontSizeSmallHeading5;
+                line-height: $LineHeightSmallHeading5;
+                letter-spacing: $LetterSpacingParagraph;
+
+                &:hover {
+                  border: 1px solid $primaryColor;
+                }
+              }
+
+              .active {
+                background-color: $primaryColor;
+                color: $darkColor;
+              }
+            }
+
+            .technology-desc-container {
+              h6 {
+                font-size: $FontSizeSmallParagraph;
+                line-height: 16.8px;
+                letter-spacing: $LetterSpacingExtraSmallHeading5;
+                margin-bottom: 20px;
+              }
+
+              h3 {
+                font-size: $FontSizeSmallHeading3;
+                line-height: $LineHeightSmallHeading3;
+                margin-bottom: 20px;
+              }
+
+              p {
+                font-size: $FontSizeSmallParagraph;
+                line-height: $LineHeightSmallParagraph;
+                width: 87%;
+                margin: auto;
+                margin-bottom: 4rem;
+              }
+            }
+          }
+        }
+        .technology-right-container {
+          width: 100%;
+
+          .device-screen {
+            display: none;
+          }
+
+          .mobile-tablet-screen {
+            display: block;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .technology-container {
+    background-image: url(../../assets/technology/background-technology-tablet.jpg);
+
+    .technology-row {
+      padding: 12rem 0 0 0;
+
+      .technology-wrapper {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        text-align: center;
+
+        .technology-left-container {
+          width: 100%;
+
+          .technology-title {
+            position: absolute;
+            top: -50px;
+            left: 35px;
+
+            h5 {
+              font-size: $FontSizeParagraph;
+              line-height: $LineHeightSmallParagraph;
+              letter-spacing: $LetterSpacingHeading;
+            }
+          }
+          .technology-content-container {
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+
+            .buttons-container {
+              flex-direction: row;
+              justify-content: center;
+              gap: 20px;
+              width: 100%;
+              margin-bottom: 2rem;
+
+              .button {
+                width: 60px;
+                height: 60px;
+                font-size: $FontSizeSmallHeading3;
+                line-height: $LineHeightSmallHeading3;
+                letter-spacing: $LetterSpacingSmallHeading4;
+
+                &:hover {
+                  border: 1px solid $primaryColor;
+                }
+              }
+
+              .active {
+                background-color: $primaryColor;
+                color: $darkColor;
+              }
+            }
+
+            .technology-desc-container {
+              h6 {
+                font-size: $FontSizeSmallHeading5;
+                line-height: $LineHeightSmallHeading5;
+                letter-spacing: $LetterSpacingSmallHeading5;
+                margin-bottom: 20px;
+              }
+
+              h3 {
+                font-size: $FontSizeSmallHeading2;
+                line-height: $LineHeightHeading2;
+                margin-bottom: 20px;
+              }
+
+              p {
+                font-size: $FontSizeSmallHeading5;
+                line-height: $LineHeightMediumParagraph;
+                width: 57%;
+                margin: auto;
+                margin-bottom: 4rem;
+              }
+            }
+          }
+        }
+        .technology-right-container {
+          width: 100%;
+
+          .device-screen {
+            display: none;
+          }
+
+          .mobile-tablet-screen {
+            display: block;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

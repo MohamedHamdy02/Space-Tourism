@@ -1,0 +1,109 @@
+// FONT FAMILY
+$fontFamily1: "Bellefair";
+$fontFamily2: "Barlow Condensed";
+$fontFamily3: "Barlow";
+
+// FONT SIZE
+$FontUpperCase: uppercase;
+
+$FontSizeHeading1: 150px;
+$FontSizeSmallHeading1: 80px;
+
+$FontSizeHeading2: 100px;
+$FontSizeSmallHeading2: 40px;
+
+$FontSizeHeading3: 56px;
+$FontSizeSmallHeading3: 24px;
+
+$FontSizeHeading4: 32px;
+
+$FontSizeHeading5: 28px;
+$FontSizeSmallHeading5: 16px;
+$FontSizeExtraSmallHeading5: 14px;
+
+$FontSizeParagraph: 20px;
+$FontSizeMediumParagraph: 18px;
+$FontSizeSmallParagraph: 15px;
+
+// FONT WEIGHT
+$PriamryFontWeight: 400;
+$SecondaryFontWeight: 700;
+$TertiaryFontWeight: 600;
+
+// LINE HEIGHT
+$LineHeightHeading1: 172px;
+$LineHeightMediumHeading1: 114.6px;
+$LineHeightSmallHeading1: 100px;
+
+$LineHeightHeading2: 45.84px;
+
+$LineHeightHeading3: 64.18px;
+$LineHeightSmallHeading3: 27.5px;
+
+$LineHeightHeading4: 36.67px;
+$LineHeightSmallHeading4: 23px;
+
+$LineHeightHeading5: 34px;
+$LineHeightSmallHeading5: 19.2px;
+$LineHeightExtraSmallHeading5: 16.6px;
+
+$LineHeightParagraph: 32px;
+$LineHeightMediumParagraph: 28px;
+$LineHeightSmallParagraph: 25px;
+
+// LETTER SPACING
+
+$LetterSpacingHeading: 3.38px;
+
+$LetterSpacingHeading4: 2px;
+$LetterSpacingSmallHeading4: 1.25px;
+
+$LetterSpacingHeading5: 4.72px;
+$LetterSpacingSmallHeading5: 2.7px;
+$LetterSpacingExtraSmallHeading5: 2.36px;
+
+$LetterSpacingParagraph: 1px;
+
+// THEME COLOR
+$primaryColor: #ffffff;
+$secondaryColor: #d0d6f9;
+$darkColor: #0b0d17;
+
+// OPACITY
+
+$Opacity: 1;
+
+$LightOpacity: 0.25;
+
+
+// MIXINS
+
+@mixin heading-one {
+  font-size: $FontSizeHeading1;
+  font-weight: $PriamryFontWeight;
+  font-family: $fontFamily1;
+  line-height: $LineHeightHeading1;
+}
+
+@mixin heading-four {
+  font-size: $FontSizeHeading4;
+  letter-spacing: $LetterSpacingHeading4;
+  font-weight: $PriamryFontWeight;
+  font-family: $fontFamily1;
+}
+
+@mixin heading-five {
+  color: $secondaryColor;
+  font-size: $FontSizeHeading5;
+  line-height: $LineHeightHeading5;
+  font-weight: $PriamryFontWeight;
+  letter-spacing: $LetterSpacingHeading5;
+  font-family: $fontFamily2;
+}
+
+@mixin paragraph {
+  font-size: $FontSizeMediumParagraph;
+  line-height: $LineHeightParagraph;
+  font-family: $fontFamily3;
+  color: $secondaryColor;
+}
