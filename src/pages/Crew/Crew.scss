@@ -109,7 +109,7 @@
     height: auto;
 
     .crew-row {
-      padding: 9rem 34px 0 34px;
+      padding: 9rem 34px 80px 34px;
 
       .crew-wrapper {
         flex-wrap: wrap;
@@ -148,7 +148,6 @@
             width: 100%;
             font-size: $FontSizeSmallParagraph;
             line-height: $LineHeightSmallParagraph;
-            margin-bottom: 5rem;
           }
 
           .carousel-container {
