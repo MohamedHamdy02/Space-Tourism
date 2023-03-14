@@ -3,7 +3,7 @@ export const data = {
     {
       name: "Moon",
       images: {
-        png: "https://i.ibb.co/Gd3SztR/image-moon.png",
+        png: "https://www.linkpicture.com/q/image-moon.png",
         webp: "./assets/destination/image-moon.webp",
       },
       description:
@@ -14,7 +14,7 @@ export const data = {
     {
       name: "Mars",
       images: {
-        png: "https://i.ibb.co/6vYtfRL/image-mars.png",
+        png: "https://www.linkpicture.com/q/image-mars_1.png",
         webp: "./assets/destination/image-mars.webp",
       },
       description:
@@ -25,7 +25,7 @@ export const data = {
     {
       name: "Europa",
       images: {
-        png: "https://i.ibb.co/BqrNqX5/image-europa.png",
+        png: "https://www.linkpicture.com/q/image-europa.png",
         webp: "./assets/destination/image-europa.webp",
       },
       description:
@@ -36,7 +36,7 @@ export const data = {
     {
       name: "Titan",
       images: {
-        png: "https://i.ibb.co/2hW4dfS/image-titan.png",
+        png: "https://www.linkpicture.com/q/image-titan.png",
         webp: "./assets/destination/image-titan.webp",
       },
       description:
