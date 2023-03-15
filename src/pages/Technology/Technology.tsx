@@ -52,8 +52,8 @@ const Technology = (props: Props) => {
             <div className="device-screen">
               {technology?.[technologyIndex]?.images?.portrait && (
                 <img
-                  src={technology?.[technologyIndex]?.images.portrait}
-                  alt={technology?.[technologyIndex]?.name ?? ""}
+                  src={technology[technologyIndex].images.portrait}
+                  alt={technology[technologyIndex].name ?? ""}
                 />
               )}
             </div>
@@ -61,8 +61,8 @@ const Technology = (props: Props) => {
             <div className="mobile-tablet-screen">
               {technology?.[technologyIndex]?.images.landscape && (
                 <img
-                  src={technology?.[technologyIndex]?.images.landscape}
-                  alt={technology?.[technologyIndex]?.name ?? ""}
+                  src={technology[technologyIndex].images.landscape}
+                  alt={technology[technologyIndex].name ?? ""}
                 />
               )}
             </div>

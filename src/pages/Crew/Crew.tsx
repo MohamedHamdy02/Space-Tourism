@@ -18,11 +18,11 @@ const Crew = (props: Props) => {
               </h5>
             </div>
             <div className="crew-desc-container">
-              {crew?.[crewIndex]?.role && <h4>{crew?.[crewIndex]?.role}</h4>}
+              {crew?.[crewIndex]?.role && <h4>{crew[crewIndex].role}</h4>}
 
-              {crew?.[crewIndex]?.name && <h3>{crew?.[crewIndex]?.name}</h3>}
+              {crew?.[crewIndex]?.name && <h3>{crew[crewIndex].name}</h3>}
 
-              {crew?.[crewIndex]?.bio && <p>{crew?.[crewIndex]?.bio}</p>}
+              {crew?.[crewIndex]?.bio && <p>{crew[crewIndex].bio}</p>}
             </div>
             <div className="carousel-container">
               <div className="carousel-row">
@@ -34,9 +34,7 @@ const Crew = (props: Props) => {
                           crewIndex === index && "active"
                         }`}
                         key={index}
-                        onClick={() => {
-                          setCrewIndex(index);
-                        }}
+                        onClick={() => setCrewIndex(index)}
                       >
                         {item.id}
                       </div>
@@ -48,8 +46,8 @@ const Crew = (props: Props) => {
           <div className="crew-right-container">
             {crew?.[crewIndex]?.images?.png && (
               <img
-                src={crew?.[crewIndex]?.images?.png}
-                alt={crew?.[crewIndex]?.name ?? ""}
+                src={crew[crewIndex].images.png}
+                alt={crew[crewIndex].name ?? ""}
               />
             )}
           </div>
